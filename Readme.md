@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дарья Борисова](https://up.htmlacademy.ru/htmlcss/14/user/48915).
-* Наставник: `Неизвестно`.
+* Наставник: [Владимир Меркулов] (https://htmlacademy.ru/profile/straniks).
 
 ---
 
