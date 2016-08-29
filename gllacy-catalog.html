@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>GllacyShop &mdash; Магазин Глейси &mdash; Сливочное мороженое</title>
   </head>
   
@@ -10,7 +12,7 @@
   <body>
     <header class="container">
       <div class="logo">
-        <a href="index.html"><img src="http://placehold.it/154x64" width="154" height="64" alt="GllacyShop"></a>
+        <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="GllacyShop"></a>
       </div>
       
       <nav class="menu">
@@ -41,61 +43,13 @@
           </div>
         </div>
           
-        <!--
-        <div class="popup-search"
-          <input type="search" name="search" placeholder="Что ищем?">
-        </div>
-        -->
-          
         <div class="login">
           <button type="button">Вход</button>
         </div>
-         
-          <!--          
-          <div class="popup-login-form">
-            <form action="" method="get">
-              <label>Электронная почта: 
-                <input type="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label>Пароль: 
-                <input type="password" name="password" placeholder="Пароль">
-              </label>
-              <button type="submit">Войти</button>
-              <div>
-                <a href="">Забыли пароль?</a>
-                <a href="">Новая регистрация</a>
-              </div>
-            </form>
-          </div>
-          -->
-          
+                  
         <div class="cart loaded">
           <button type="button">2 товара</button>
         </div>
-
-        <!--
-        <div class="popup-cart-inside">
-          <div class="goods-table">
-            <ul>
-              <li><button type="submit">Удалить из списка</button></li>
-              <li>Пломбир с апельсиновым джемом</li>
-              <li>1,5 кг х 200 руб.</li>
-              <li>300 руб.</li>
-            </ul>
-            <ul>
-              <li><button type="submit">Удалить из списка</button></li>
-              <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-              <li>1,5 кг х 300 руб.</li>
-              <li>450 руб.</li>
-            </ul>
-          </div>
-          <div class="sum">
-            Итого: <span>750</span> руб.
-          </div>
-          <button type="submit" class="btn">Оформить заказ</button>
-        </div>
-        -->
-        
       </div>
       
       <div class="phones">
@@ -238,7 +192,58 @@
             <li class="page"><a href="">5</a></li>
             <li class=arrow-next><a href="">Следующие страницы</a></li>
           </ul>
+      </div>
+      
+      <!------------------------------------------------------------------
+      --------------        POPUPS      ----------------------------------
+      --------------------------------------------------------------------
+          
+      <div class="popup-search">
+        <input type="search" name="search" placeholder="Что ищем?">
+      </div>
+
+      <div class="popup-login-form">
+        <form action="" method="post">
+          <label>Электронная почта: 
+            <input type="email" name="email" placeholder="Электронная почта">
+          </label>
+          <label>Пароль: 
+            <input type="password" name="password" placeholder="Пароль">
+          </label>
+          <button type="submit" class="btn">Войти</button>
+          <div>
+            <a href="">Забыли пароль?</a>
+            <a href="">Новая регистрация</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup-cart-inside">
+        <div class="goods-table">
+          <ul>
+            <li><a>Удалить из списка</a></li>
+            <li>Пломбир с апельсиновым джемом</li>
+            <li>1,5 кг х 200 руб.</li>
+            <li>300 руб.</li>
+          </ul>
+          <ul>
+            <li><a>Удалить из списка</a></li>
+            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
+            <li>1,5 кг х 300 руб.</li>
+            <li>450 руб.</li>
+          </ul>
         </div>
+        <div class="sum">
+          Итого: <span>750</span> руб.
+        </div>
+        <button class="btn">Оформить заказ</button>
+      </div>
+
+      ----------------------------------------------------------------------
+      ----------------------------------------------------------------------
+      --------------------------------------------------------------------->
+
+      
     </main>
     
     
@@ -258,6 +263,7 @@
       </section>
       
       <section class="copyright">
+        <img src="img/HTMLAcademy-logo.svg" width="108" height="37" alt="Логотип HTML Academy">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
       </section>
     </footer>

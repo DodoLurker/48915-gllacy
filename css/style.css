@@ -1,0 +1,26 @@
+body {
+  background-color: #849d8f;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 22px;
+}
+
+h1.slider-name {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.banners h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.product-item h1 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  text-decoration: underline;
+}

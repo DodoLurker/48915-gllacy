@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>GllacyShop &mdash; Магазин Глейси &mdash; Мороженое собственного производства на развес</title>
   </head>
   
@@ -10,7 +12,7 @@
   <body>
     <header class="container">
       <div class="logo">
-        <img src="http://placehold.it/154x64" width="154" height="64" alt="GllacyShop">
+        <img src="img/logo.svg" width="154" height="64" alt="GllacyShop">
       </div>
       
       <nav class="menu">
@@ -40,62 +42,14 @@
             <button type="button">Поиск</button>
           </div>
         </div>
-          
-          <!--
-          <div class=popup-search>
-            <input type="search" name="search" placeholder="Что ищем?">
-          </div>
-          -->
-          
+
         <div class="login">
           <button type="button">Вход</button>
         </div>
          
-          <!--          
-          <div class="popup-login-form">
-            <form action="" method="post">
-              <label>Электронная почта: 
-                <input type="email" name="email" placeholder="Электронная почта">
-              </label>
-              <label>Пароль: 
-                <input type="password" name="password" placeholder="Пароль">
-              </label>
-              <button type="submit" class="btn">Войти</button>
-              <div>
-                <a href="">Забыли пароль?</a>
-                <a href="">Новая регистрация</a>
-              </div>
-            </form>
-          </div>
-          -->
-          
         <div class="cart">
           <button type="button">Пусто</button>
         </div>
-
-        <!--
-        <div class="popup-cart-inside">
-          <div class="goods-table">
-            <ul>
-              <li><a>Удалить из списка</a></li>
-              <li>Пломбир с апельсиновым джемом</li>
-              <li>1,5 кг х 200 руб.</li>
-              <li>300 руб.</li>
-            </ul>
-            <ul>
-              <li><a>Удалить из списка</a></li>
-              <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-              <li>1,5 кг х 300 руб.</li>
-              <li>450 руб.</li>
-            </ul>
-          </div>
-          <div class="sum">
-            Итого: <span>750</span> руб.
-          </div>
-          <button class="btn">Оформить заказ</button>
-        </div>
-
-        -->
       </div>
       
       <div class="phones">
@@ -117,27 +71,18 @@
         <div class="sliders-ice-creams">
           <div class="slider-inner">
             <div class="slider-1">
-              <h1 class="slider-name">
-                Крем-брюле и пломбир с малиновым джемом
-              </h1>
-              <img src="http://placehold.it/375x585" width="375" height="585" alt="Крем-брюле">
-              <img src="http://placehold.it/340x525" width="340" height="525" alt="Пломбир с малиновым джемом">
+              <h1 class="slider-name">Крем-брюле и пломбир с малиновым джемом</h1>
+              <img src="img/slider-icecreams-1.png" width="650" height="585" alt="Крем-брюле и пломбир с малиновым джемом">
             </div>
             
             <div class="slider-2">
-              <h1 class="slider-name">
-                Шоколадный пломбир и лимонный сорбет
-              </h1>
-              <img src="http://placehold.it/375x585" width="375" height="585" alt="Шоколадный пломбир">
-              <img src="http://placehold.it/340x525" width="340" height="525" alt="Лимонный сорбет">
+              <h1 class="slider-name">Шоколадный пломбир и лимонный сорбет</h1>
+              <img src="img/slider-icecreams-2.png" width="650" height="585" alt="Шоколадный пломбир и лимонный сорбет">
             </div>
             
             <div class="slider-3">
-              <h1 class="slider-name">
-                Пломбир с помадкой и клубничный щербет
-              </h1>
-              <img src="http://placehold.it/375x585" width="375" height="585" alt="Пломбир с помадкой">
-              <img src="http://placehold.it/340x525" width="340" height="525" alt="Клубничный щербет">
+              <h1 class="slider-name">Пломбир с помадкой и клубничный щербет</h1>
+              <img src="img/slider-icecreams-3.png" width="650" height="585" alt="Пломбир с помадкой и клубничный щербет">
             </div>
           </div>
         </div>
@@ -246,6 +191,7 @@
       </section>
       
       <div class="map">
+        <img src="img/map.jpg" width="900" height="430" alt="Карта проезда">
         <div class="ice-cream-pointer"></div>
         <div class="contacts">
           <p>
@@ -260,17 +206,64 @@
           <button type="button" class="btn">Форма обратной связи</button>
         </div>
       </div>
+        
+      <!------------------------------------------------------------------
+      --------------        POPUPS      ----------------------------------
+      --------------------------------------------------------------------
           
-          <!--          
-          <div class="popup-feedback">
-            <form action="" metod="post">
-              <input type="text" name="client-name" placeholder="Как вас зовут?">
-              <input type="email" placeholder="Ваша почта для ответа?">
-              <textarea name="client-message" placeholder="Напишите что-нибудь..."></textarea>
-              <button type="submit" class="btn">Отправить</button>
-            </form>
+      <div class="popup-search">
+        <input type="search" name="search" placeholder="Что ищем?">
+      </div>
+
+      <div class="popup-login-form">
+        <form action="" method="post">
+          <label>Электронная почта: 
+            <input type="email" name="email" placeholder="Электронная почта">
+          </label>
+          <label>Пароль: 
+            <input type="password" name="password" placeholder="Пароль">
+          </label>
+          <button type="submit" class="btn">Войти</button>
+          <div>
+            <a href="">Забыли пароль?</a>
+            <a href="">Новая регистрация</a>
           </div>
-          -->
+        </form>
+      </div>
+
+      <div class="popup-cart-inside">
+        <div class="goods-table">
+          <ul>
+            <li><a>Удалить из списка</a></li>
+            <li>Пломбир с апельсиновым джемом</li>
+            <li>1,5 кг х 200 руб.</li>
+            <li>300 руб.</li>
+          </ul>
+          <ul>
+            <li><a>Удалить из списка</a></li>
+            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
+            <li>1,5 кг х 300 руб.</li>
+            <li>450 руб.</li>
+          </ul>
+        </div>
+        <div class="sum">
+          Итого: <span>750</span> руб.
+        </div>
+        <button class="btn">Оформить заказ</button>
+      </div>
+
+      <div class="popup-feedback">
+        <form action="" metod="post">
+          <input type="text" name="client-name" placeholder="Как вас зовут?">
+          <input type="email" placeholder="Ваша почта для ответа?">
+          <textarea name="client-message" placeholder="Напишите что-нибудь..."></textarea>
+          <button type="submit" class="btn">Отправить</button>
+        </form>
+      </div>
+      
+      ----------------------------------------------------------------------
+      ----------------------------------------------------------------------
+      --------------------------------------------------------------------->
           
     </main>
     
@@ -292,6 +285,7 @@
       </section>
       
       <section class="copyright">
+        <img src="img/HTMLAcademy-logo.svg" width="108" height="37" alt="Логотип HTML Academy">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2016</p>
       </section>
     </footer>
