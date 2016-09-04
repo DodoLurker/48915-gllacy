@@ -1,15 +1,290 @@
 body {
-  background-color: #849d8f;
+  min-width: 900px;
+  margin: 0;
+  padding: 0;
+
+  background: #849d8f;
+  
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: white;
   line-height: 22px;
 }
 
+/*только для разметки*/
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  min-width: 860px;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 0 2.3%;
+}
+
+
+
+/*=============================================================
+                            HEADER
+==============================================================*/
+
+
+.logo { 
+  float: left;
+  position: relative;
+  left: -5px;
+  width: 155px;
+
+  /*только для оформления*/
+  min-height: 75px;
+}
+
+.menu  {
+  float: left;
+  min-width: 420px;
+  
+  /*только для оформления*/
+  min-height: 75px;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu > li:hover .submenu {
+  display: block;
+}
+
+.user-block  {
+  float: right;
+  width: 260px;
+  
+  /*только для оформления*/
+  min-height: 75px;
+}
+
+.breadcrumbs {
+  float: left;
+  
+  /*только для оформления*/
+  min-height: 40px;
+  min-width: 220px;
+}
+
+.menu li,
+.breadcrumbs li,
+.user-block > div {
+  display: inline-block;
+}
+
+.phones {
+  float: right;
+  min-width: 165px;
+  
+  /*только для оформления*/
+  min-height: 40px;
+}
+
+
+
+/*=============================================================
+                            MAIN
+==============================================================*/
+
+.filters {
+  /*только для оформления*/
+  min-height: 135px;
+  margin-bottom: 35px;
+}
+
+.filters fieldset {
+  float: left;
+  
+  /*только для оформления*/
+  min-height: 60px;
+}
+
+.filters .sort-by {
+  width: 200px;
+}
+
+.filters .price-range {
+  width: 230px;
+}
+
+.filters .fat {
+  width: 420px;
+}
+
+.filters .flavour-ingredients {
+  margin-top: 10px;
+  width: 705px;
+}
+
+.filters button {
+  float: left;
+  margin-top: 10px;
+  
+  /*только для оформления*/
+  min-height: 60px;
+  width: 150px;
+}
+
+.catalog {
+  margin-bottom: 50px;
+}
+
+.sliders {
+  position: relative;
+  overflow: hidden;
+}
+
+.sliders-buttons {
+  position: absolute;
+  bottom: 23px;
+  left: 0;
+  width: 80px;
+  height: 22px;
+}
+
+.banners {
+  margin-bottom: 40px;
+}
+
+.banners article {
+  float: left;
+  width: 48.8%;
+  min-height: 230px;
+}
+
+.banners article:last-child {
+  float: right;  
+}
+
+.product-item {
+  float: left;
+  width: 23.3%;
+  margin-right: 2.2%;
+  
+  /*только для оформления*/
+  min-height: 360px;
+}
+
+.product-item:nth-child(4n) {
+  float: right;
+  margin-right: 0;
+}
+
+.seo {
+  margin-bottom: 40px;
+  padding: 27px 20px;
+  
+  /*только для оформления*/
+  min-height: 254px;
+}
+
+.seo header {
+  margin-bottom: 10px;
+  
+  /*только для оформления*/
+  min-height: 57px;
+}
+
+.seo section {
+  float: left;
+  width: 48.8%;
+  margin-right: 2.2%;
+  
+  /*только для оформления*/
+  min-height: 88px;
+}
+
+.seo section:nth-of-type(2n) {
+  float: right;
+  margin-right: 0;
+  
+}
+
+.blog-news {
+  float: left;
+  width: 48.8%;
+  margin-right: 2.2%;
+  margin-bottom: 40px;
+  
+  /*только для оформления*/
+  min-height: 220px;
+}
+
+.mail-out {
+  float: right;
+  width: 48.8%;
+  margin-bottom: 40px;
+  
+  /*только для оформления*/
+  min-height: 220px;
+}
+
+.map {
+  position: relative;
+  clear: both;
+  width: 104.4%;
+  margin-left: -2.2%;
+  
+  background: white url("../img/map.jpg/") no-repeat 50% 50%;
+  background-size: 1200px 430px;
+  
+  /*только для оформления*/
+  min-height: 430px;
+}
+
+.contacts {
+  position: absolute;
+  right: 2.2%;
+  top: 63px;
+  bottom: 63px;
+  width: 300px;
+  
+  background: white;
+  color: black;
+  
+  /*только для оформления*/
+  min-height: 304px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+  
+  /*только для оформления*/
+  min-height: 30px;
+}
+
+.pagination ul {
+  float: right;
+  
+  /*только для оформления*/
+  min-height: 30px;
+  margin: 0;
+  min-width: 190px;
+}
+
+.pagination ul li {
+  display: inline-block;
+}
+
 h1.slider-name {
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
+  max-width: 665px;
 }
 
 .banners h1 {
@@ -23,4 +298,36 @@ h1.slider-name {
   line-height: 22px;
   font-weight: normal;
   text-decoration: underline;
+}
+
+
+
+/*=============================================================
+                            FOOTER
+==============================================================*/
+
+
+.socials {
+  float: left;
+  width: 250px;
+  
+  /*только для оформления*/
+  min-height: 100px;
+}
+
+.about-company {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  
+  /*только для оформления*/
+  min-height: 100px;
+}
+
+.copyright {
+  float: right;
+  min-width: 190px;
+  
+  /*только для оформления*/
+  min-height: 100px;
 }

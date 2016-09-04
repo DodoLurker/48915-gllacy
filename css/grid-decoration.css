@@ -1,0 +1,201 @@
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+
+  height: 20px;
+  padding: 2px 5px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -2px;
+  left: -2px;
+}
+
+body > * > *::before {
+  bottom: -2px;
+  left: -2px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  right: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 2px green;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+body > * > * {
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 2px rgb(255, 45, 82);
+}
+
+body > * > *::before {
+  color: white;
+  background: rgb(255, 45, 82);
+}
+
+body > * > * > * {
+  background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+}
+
+body > * > * > *::before {
+  color: black;
+  background: rgb(234, 255, 45);
+}
+
+
+
+
+
+
+.main-header::before {
+  content: ".main-header"
+}
+header.container::before {
+  content: "header.container";
+}
+
+main.container::before {
+  content: "main.container";
+}
+
+footer.container::before {
+  content: "footer.container";
+}
+
+.logo::before {
+  content: ".logo";
+}
+
+.menu::before {
+  content: ".menu";
+}
+
+.user-block::before {
+  content: ".user-block";
+}
+
+.phones::before {
+  content: ".phones";
+}
+
+.sliders::before {
+  content: ".sliders";
+}
+
+.banners article::before {
+  content: ".banners article";
+}
+
+.hits::before {
+  content: ".hits";
+}
+
+.hits .product-item::before {
+  content: ".product-item";
+}
+
+.seo::before {
+  content: ".seo";
+}
+
+.seo header::before {
+  content: ".seo header";
+}
+
+.seo section::before {
+  content: ".seo section";
+}
+
+.blog-news::before {
+  content: ".blog-news";
+}
+
+.mail-out::before {
+  content: ".mail-out";
+}
+
+.map::before {
+  content: ".map";
+}
+
+.contacts::before {
+  content: ".contacts";
+}
+
+.socials::before {
+  content: ".socials";
+}
+
+.about-company::before {
+  content: ".about-company";
+}
+
+.copyright::before {
+  content: ".copyright";
+}
+
+.breadcrumbs::before {
+  content: ".breadcrumbs";
+}
+
+.filters::before {
+  content: ".filters";
+}
+
+/*
+.sort-by::before {
+  content: ".sort-by";
+}
+
+.price-range::before {
+  content: ".price-range";
+}
+
+.fat::before {
+  content: ".fat";
+}
+
+.flavour-ingredients::before {
+  content: ".flavour-ingredients";
+}
+*/
+
+.catalog::before {
+  content: ".catalog";
+}
+
+.pagination::before {
+  content: ".pagination";
+}
